@@ -1,0 +1,109 @@
+<vm name="gzip">
+  <binaryOptions>
+    <configurationOption>
+      <name>root</name>
+      <outputString>
+      </outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>
+      </parent>
+      <children>
+        <option>Synchronous</option>
+        <option>CompressionRate</option>
+        <option>NameConfig</option>
+      </children>
+      <impliedOptions />
+      <excludedOptions />
+      <defaultValue>Selected</defaultValue>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>NameConfig</name>
+      <outputString>
+      ''
+      </outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>
+      </parent>
+      <children>
+        <option>Name</option>
+        <option>NoName</option>
+      </children>
+      <impliedOptions />
+      <excludedOptions />
+      <defaultValue>Selected</defaultValue>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>Synchronous</name>
+      <outputString>--synchronous</outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>root</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions />
+      <defaultValue>Selected</defaultValue>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>Name</name>
+      <outputString>--name</outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>NameConfig</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions>
+        <options>NoName</options>
+      </excludedOptions>
+      <defaultValue>Selected</defaultValue>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>NoName</name>
+      <outputString>--no-name</outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>NameConfig</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions>
+        <options>Name</options>
+      </excludedOptions>
+      <defaultValue>Selected</defaultValue>
+      <optional>False</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions>
+    <configurationOption>
+      <name>CompressionRate</name>
+      <outputString>-$n</outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>root</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions />
+      <minValue>1</minValue>
+      <maxValue>9</maxValue>
+      <stepFunction>CompressionRate + 1</stepFunction>
+    </configurationOption>
+  </numericOptions>
+  <booleanConstraints />
+  <nonBooleanConstraints />
+</vm>

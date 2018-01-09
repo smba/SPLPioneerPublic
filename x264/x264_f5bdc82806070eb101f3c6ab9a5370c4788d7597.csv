@@ -1,0 +1,2 @@
+EncodingTarget,ManualThreads,crf,no_asm,no_cabac,no_mbtree,no_scenecut,qp,Threads,aq_strength,b_bias,bframes,crfRatio,ipratio,keyint,qcomp,qpSetting,rc_lookahead,ref,scenecut,e,S,U,M,t,K,D,p,X,Z,I,O,r,s,k,x,e_mad,S_mad,U_mad,M_mad,t_mad,K_mad,D_mad,p_mad,X_mad,Z_mad,I_mad,O_mad,r_mad,s_mad,k_mad,x_mad
+1,1,0,1,1,1,1,1,101,1.2,-23,14,24.6000000000001,0.4,922,0.6,42,42,9,31,25.23,0.25,14.2,79760,0,0,0,0,0,4096,0,40,0,0,0,0,6.0500000000000007,0.0,0.029999999999999361,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,8.0,0.0,0.0,0.0,0.0

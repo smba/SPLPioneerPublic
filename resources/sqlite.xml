@@ -1,0 +1,397 @@
+<vm name="SQLite">
+  <binaryOptions>
+    <configurationOption>
+      <name>OperatingSystemCharacteristics</name>
+      <outputString>noOutput</outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>
+      </parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions />
+      <defaultValue>Selected</defaultValue>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>SQLITE_SECURE_DELETE</name>
+      <outputString>SQLITE_SECURE_DELETE</outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>OperatingSystemCharacteristics</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions />
+      <defaultValue>Selected</defaultValue>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ChooseSQLITE_TEMP_STORE</name>
+      <outputString>noOutput</outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>OperatingSystemCharacteristics</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions />
+      <defaultValue>Selected</defaultValue>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>SQLITE_TEMP_STOREzero</name>
+      <outputString>SQLITE_TEMP_STORE 0</outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>ChooseSQLITE_TEMP_STORE</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions>
+        <options>SQLITE_TEMP_STOREone</options>
+        <options>SQLITE_TEMP_STOREtwo</options>
+        <options>SQLITE_TEMP_STOREthree</options>
+      </excludedOptions>
+      <defaultValue>Selected</defaultValue>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>SQLITE_TEMP_STOREone</name>
+      <outputString>SQLITE_TEMP_STORE 1</outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>ChooseSQLITE_TEMP_STORE</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions>
+        <options>SQLITE_TEMP_STOREzero</options>
+        <options>SQLITE_TEMP_STOREthree</options>
+        <options>SQLITE_TEMP_STOREtwo</options>
+      </excludedOptions>
+      <defaultValue>Selected</defaultValue>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>SQLITE_TEMP_STOREtwo</name>
+      <outputString>SQLITE_TEMP_STORE 2</outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>ChooseSQLITE_TEMP_STORE</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions>
+        <options>SQLITE_TEMP_STOREzero</options>
+        <options>SQLITE_TEMP_STOREone</options>
+        <options>SQLITE_TEMP_STOREthree</options>
+      </excludedOptions>
+      <defaultValue>Selected</defaultValue>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>SQLITE_TEMP_STOREthree</name>
+      <outputString>SQLITE_TEMP_STORE 3</outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>ChooseSQLITE_TEMP_STORE</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions>
+        <options>SQLITE_TEMP_STOREzero</options>
+        <options>SQLITE_TEMP_STOREone</options>
+        <options>SQLITE_TEMP_STOREtwo</options>
+      </excludedOptions>
+      <defaultValue>Selected</defaultValue>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>EnableFeatures</name>
+      <outputString>noOutput</outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>
+      </parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions />
+      <defaultValue>Selected</defaultValue>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>SQLITE_ENABLE_ATOMIC_WRITE</name>
+      <outputString>SQLITE_ENABLE_ATOMIC_WRITE</outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>EnableFeatures</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions />
+      <defaultValue>Selected</defaultValue>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>SQLITE_ENABLE_STAT2</name>
+      <outputString>SQLITE_ENABLE_STAT2</outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>EnableFeatures</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions />
+      <defaultValue>Selected</defaultValue>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>DisableFeatures</name>
+      <outputString>noOutput</outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>
+      </parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions />
+      <defaultValue>Selected</defaultValue>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>SQLITE_DISABLE_LFS</name>
+      <outputString>SQLITE_DISABLE_LFS</outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>DisableFeatures</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions />
+      <defaultValue>Selected</defaultValue>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>SQLITE_DISABLE_DIRSYNC</name>
+      <outputString>SQLITE_DISABLE_DIRSYNC</outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>DisableFeatures</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions />
+      <defaultValue>Selected</defaultValue>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>OmitFeatures</name>
+      <outputString>noOutput</outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>
+      </parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions />
+      <defaultValue>Selected</defaultValue>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>SQLITE_OMIT_AUTOMATIC_INDEX</name>
+      <outputString>SQLITE_OMIT_AUTOMATIC_INDEX</outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>OmitFeatures</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions />
+      <defaultValue>Selected</defaultValue>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>SQLITE_OMIT_BETWEEN_OPTIMIZATION</name>
+      <outputString>SQLITE_OMIT_BETWEEN_OPTIMIZATION</outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>OmitFeatures</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions />
+      <defaultValue>Selected</defaultValue>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>SQLITE_OMIT_BTREECOUNT</name>
+      <outputString>SQLITE_OMIT_BTREECOUNT</outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>OmitFeatures</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions />
+      <defaultValue>Selected</defaultValue>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>SQLITE_OMIT_LIKE_OPTIMIZATION</name>
+      <outputString>SQLITE_OMIT_LIKE_OPTIMIZATION</outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>OmitFeatures</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions />
+      <defaultValue>Selected</defaultValue>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>SQLITE_OMIT_LOOKASIDE</name>
+      <outputString>SQLITE_OMIT_LOOKASIDE</outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>OmitFeatures</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions />
+      <defaultValue>Selected</defaultValue>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>SQLITE_OMIT_OR_OPTIMIZATION</name>
+      <outputString>SQLITE_OMIT_OR_OPTIMIZATION</outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>OmitFeatures</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions />
+      <defaultValue>Selected</defaultValue>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>SQLITE_OMIT_SHARED_CACHE</name>
+      <outputString>SQLITE_OMIT_SHARED_CACHE</outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>OmitFeatures</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions />
+      <defaultValue>Selected</defaultValue>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>LockingMode</name>
+      <outputString>noOutput</outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>Options</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions />
+      <defaultValue>Selected</defaultValue>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ExclusiveLock</name>
+      <outputString>SQLITE_DEFAULT_LOCKING_MODE=1</outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>LockingMode</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions>
+        <options>NormalLockingMode</options>
+      </excludedOptions>
+      <defaultValue>Selected</defaultValue>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>NormalLockingMode</name>
+      <outputString>SQLITE_DEFAULT_LOCKING_MODE=0</outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>LockingMode</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions>
+        <options>ExclusiveLock</options>
+      </excludedOptions>
+      <defaultValue>Selected</defaultValue>
+      <optional>False</optional>
+    </configurationOption>
+	</binaryOptions>
+  <numericOptions>
+  <configurationOption>
+      <name>CacheSize</name>
+      <outputString>SQLITE_DEFAULT_CACHE_SIZE=$n</outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <children />
+      <impliedOptions />
+      <excludedOptions />
+      <minValue>1000</minValue>
+      <maxValue>50000</maxValue>
+      <stepFunction>1000</stepFunction>
+      <defaultValue>2000</defaultValue>
+    </configurationOption>
+	<configurationOption>
+      <name>PageSize</name>
+      <outputString>SQLITE_DEFAULT_PAGE_SIZE=$n</outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>PageSize</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions />
+      <minValue>1024</minValue>
+      <maxValue>20480</maxValue>
+      <stepFunction>1024</stepFunction>
+      <defaultValue>8096</defaultValue>
+    </configurationOption>
+  </numericOptions>
+</vm>

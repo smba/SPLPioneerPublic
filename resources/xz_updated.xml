@@ -1,0 +1,323 @@
+<vm name="xz_updated">
+  <binaryOptions>
+    <configurationOption>
+      <name>root</name>
+      <outputString>
+      </outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>
+      </parent>
+      <children>
+        <option>Check</option>
+        <option>CustomFilter</option>
+        <option>MemoryLimit</option>
+      </children>
+      <impliedOptions />
+      <excludedOptions />
+      <defaultValue>Selected</defaultValue>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>Check</name>
+      <outputString>
+      </outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>root</parent>
+      <children>
+        <option>crc32</option>
+        <option>crc64</option>
+        <option>sha256</option>
+        <option>none</option>
+      </children>
+      <impliedOptions />
+      <excludedOptions />
+      <defaultValue>Selected</defaultValue>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>crc32</name>
+      <outputString>--check=crc32</outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>Check</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions>
+        <options>crc64</options>
+        <options>sha256</options>
+        <options>none</options>
+      </excludedOptions>
+      <defaultValue>Selected</defaultValue>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>crc64</name>
+      <outputString>--check=crc64</outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>Check</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions>
+        <options>crc32</options>
+        <options>sha256</options>
+        <options>none</options>
+      </excludedOptions>
+      <defaultValue>Selected</defaultValue>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>sha256</name>
+      <outputString>--check=sha256</outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>Check</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions>
+        <options>crc32</options>
+        <options>crc64</options>
+        <options>none</options>
+      </excludedOptions>
+      <defaultValue>Selected</defaultValue>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>none</name>
+      <outputString>
+      --check=none
+      </outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>Check</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions>
+        <options>crc32</options>
+        <options>crc64</options>
+        <options>sha256</options>
+      </excludedOptions>
+      <defaultValue>Selected</defaultValue>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>CustomFilter</name>
+      <outputString>--lzma2=</outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>root</parent>
+      <children>
+        <option>MatchFinder</option>
+        <option>Dict</option>
+        <option>Nice</option>
+        <option>Depth</option>
+        <option>Dist</option>
+      </children>
+      <impliedOptions />
+      <excludedOptions>
+        <options>Preset</options>
+      </excludedOptions>
+      <defaultValue>Selected</defaultValue>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>MatchFinder</name>
+      <outputString>
+      </outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>CustomFilter</parent>
+      <children>
+        <option>hc3</option>
+        <option>hc4</option>
+        <option>bt2</option>
+        <option>bt3</option>
+        <option>bt4</option>
+      </children>
+      <impliedOptions />
+      <excludedOptions />
+      <defaultValue>Selected</defaultValue>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>hc3</name>
+      <outputString>mf=hc3,</outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>MatchFinder</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions>
+        <options>hc4</options>
+        <options>bt2</options>
+        <options>bt3</options>
+        <options>bt4</options>
+      </excludedOptions>
+      <defaultValue>Selected</defaultValue>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>hc4</name>
+      <outputString>mf=hc4,</outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>MatchFinder</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions>
+        <options>hc3</options>
+        <options>bt2</options>
+        <options>bt3</options>
+        <options>bt4</options>
+      </excludedOptions>
+      <defaultValue>Selected</defaultValue>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>bt2</name>
+      <outputString>mf=bt2,</outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>MatchFinder</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions>
+        <options>hc3</options>
+        <options>hc4</options>
+        <options>bt3</options>
+        <options>bt4</options>
+      </excludedOptions>
+      <defaultValue>Selected</defaultValue>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>bt3</name>
+      <outputString>mf=bt3,</outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>MatchFinder</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions>
+        <options>hc3</options>
+        <options>hc4</options>
+        <options>bt2</options>
+        <options>bt4</options>
+      </excludedOptions>
+      <defaultValue>Selected</defaultValue>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>bt4</name>
+      <outputString>mf=bt4,</outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>MatchFinder</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions>
+        <options>hc3</options>
+        <options>hc4</options>
+        <options>bt2</options>
+        <options>bt3</options>
+      </excludedOptions>
+      <defaultValue>Selected</defaultValue>
+      <optional>False</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions>
+    <configurationOption>
+      <name>MemoryLimit</name>
+      <outputString>--memory=$n</outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>root</parent>
+      <children ></children>
+      <impliedOptions />
+      <excludedOptions ></excludedOptions>
+      <minValue>32768</minValue>
+      <!-- min: 32 KiB max: 4 GiB-->
+      <maxValue>4295000000</maxValue>
+      <stepFunction>32768</stepFunction>
+    </configurationOption>
+    <configurationOption>
+      <name>Dict</name>
+      <outputString>dict=$n,</outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>CustomFilter</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions />
+      <!-- min: 64 KiB max: 64 MiB -->
+      <minValue>65536</minValue>
+      <maxValue>67110000</maxValue>
+      <stepFunction>65536</stepFunction>
+    </configurationOption>
+    <configurationOption>
+      <name>Nice</name>
+      <outputString>nice=$n,</outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>CustomFilter</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions ></excludedOptions>
+      <!-- 2 and 3 should work as well... -->
+      <minValue>4</minValue>
+      <maxValue>273</maxValue>
+      <stepFunction>1</stepFunction>
+    </configurationOption>
+    <configurationOption>
+      <name>Depth</name>
+      <outputString>depth=$n,</outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>CustomFilter</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions />
+      <minValue>0</minValue>
+      <maxValue>1000</maxValue>
+      <stepFunction>1</stepFunction>
+    </configurationOption>
+  </numericOptions>
+  <booleanConstraints />
+  <nonBooleanConstraints />
+</vm>

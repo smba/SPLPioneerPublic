@@ -1,0 +1,322 @@
+<vm name="h264">
+  <binaryOptions>
+  <configurationOption>
+      <name>root</name>
+      <outputString>
+      </outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>
+      </parent>
+      <children>
+        <option>Check</option>
+        <option>CustomFilter</option>
+        <option>MemoryLimit</option>
+      </children>
+      <impliedOptions />
+      <excludedOptions />
+      <defaultValue>Selected</defaultValue>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>no_asm</name>
+      <outputString>--no-asm</outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>root</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions />
+      <defaultValue>Selected</defaultValue>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>no_scenecut</name>
+      <outputString>--no-scenecut</outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>root</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions />
+      <defaultValue>Selected</defaultValue>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>no_cabac</name>
+      <outputString>--no-cabac</outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>root</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions />
+      <defaultValue>Selected</defaultValue>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>EncodingTarget</name>
+      <outputString>noOutput</outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>root</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions />
+      <defaultValue>Selected</defaultValue>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>qp</name>
+      <outputString>noOutput</outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>EncodingTarget</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions>
+        <options>crf</options>
+      </excludedOptions>
+      <defaultValue>Selected</defaultValue>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>crf</name>
+      <outputString>noOutput</outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>EncodingTarget</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions>
+        <options>qp</options>
+      </excludedOptions>
+      <defaultValue>Selected</defaultValue>
+      <optional>False</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>no_mbtree</name>
+      <outputString>--no-mbtree</outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>root</parent>
+      <children ></children>
+      <impliedOptions />
+      <excludedOptions />
+      <defaultValue>Selected</defaultValue>
+      <optional>True</optional>
+    </configurationOption>
+    <configurationOption>
+      <name>ManualThreads</name>
+      <outputString></outputString>
+      <prefix>
+      </prefix>
+      <postfix>
+      </postfix>
+      <parent>root</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions />
+      <defaultValue>Selected</defaultValue>
+      <optional>True</optional>
+    </configurationOption>
+  </binaryOptions>
+  <numericOptions>
+    <configurationOption>
+      <name>rc_lookahead</name>
+      <outputString>--rc-lookahead $n</outputString>
+      <prefix></prefix>
+      <postfix>
+      </postfix>
+      <parent>root</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions />
+      <minValue>1</minValue>
+      <maxValue>250</maxValue>
+      <stepFunction>1</stepFunction>
+      <defaultValue>40</defaultValue>
+    </configurationOption>
+    <configurationOption>
+      <name>qcomp</name>
+      <outputString>--qcomp $n</outputString>
+      <prefix></prefix>
+      <postfix>
+      </postfix>
+      <parent>root</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions />
+      <minValue>0</minValue>
+      <maxValue>1</maxValue>
+      <stepFunction>0.1</stepFunction>
+      <defaultValue>0.6</defaultValue>
+    </configurationOption>
+    <configurationOption>
+      <name>aq_strength</name>
+      <outputString>--aq-strength $n</outputString>
+      <prefix></prefix>
+      <postfix>
+      </postfix>
+      <parent>root</parent>
+      <children ></children>
+      <impliedOptions />
+      <excludedOptions />
+      <minValue>0</minValue>
+      <maxValue>2</maxValue>
+      <stepFunction>0.1</stepFunction>
+      <defaultValue>1</defaultValue>
+    </configurationOption>
+    <configurationOption>
+      <name>ipratio</name>
+      <outputString>--ipratio $n</outputString>
+      <prefix></prefix>
+      <postfix>
+      </postfix>
+      <parent>root</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions />
+      <minValue>0</minValue>
+      <maxValue>2</maxValue>
+      <stepFunction>0.1</stepFunction>
+      <defaultValue>1.4</defaultValue>
+    </configurationOption>
+    <configurationOption>
+      <name>qpSetting</name>
+      <outputString>--qp $n</outputString>
+      <prefix></prefix>
+      <postfix>
+      </postfix>
+      <parent>root</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions />
+      <minValue>0</minValue>
+      <maxValue>51</maxValue>
+      <stepFunction>1</stepFunction>
+      <defaultValue>23</defaultValue>
+    </configurationOption>
+    <configurationOption>
+      <name>ref</name>
+      <outputString>--ref $n</outputString>
+      <prefix></prefix>
+      <postfix>
+      </postfix>
+      <parent>root</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions />
+      <minValue>0</minValue>
+      <maxValue>9</maxValue>
+      <stepFunction>1</stepFunction>
+      <defaultValue>3</defaultValue>
+    </configurationOption>
+    <configurationOption>
+      <name>b_bias</name>
+      <outputString>--b-bias $n</outputString>
+      <prefix></prefix>
+      <postfix>
+      </postfix>
+      <parent>root</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions ></excludedOptions>
+      <minValue>-100</minValue>
+      <maxValue>100</maxValue>
+      <stepFunction>1</stepFunction>
+      <defaultValue>0</defaultValue>
+    </configurationOption>
+    <configurationOption>
+      <name>bframes</name>
+      <outputString>--bframes $n</outputString>
+      <prefix></prefix>
+      <postfix>
+      </postfix>
+      <parent>root</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions />
+      <minValue>1</minValue>
+      <maxValue>25</maxValue>
+      <stepFunction>1</stepFunction>
+      <defaultValue>3</defaultValue>
+    </configurationOption>
+    <configurationOption>
+      <name>scenecut</name>
+      <outputString>--scenecut $n</outputString>
+      <prefix></prefix>
+      <postfix>
+      </postfix>
+      <parent>root</parent>
+      <children ></children>
+      <impliedOptions />
+      <excludedOptions />
+      <minValue>1</minValue>
+      <maxValue>100</maxValue>
+      <stepFunction>1</stepFunction>
+      <defaultValue>40</defaultValue>
+    </configurationOption>
+    <configurationOption>
+      <name>keyint</name>
+      <outputString>--keyint $n</outputString>
+      <prefix></prefix>
+      <postfix>
+      </postfix>
+      <parent>root</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions />
+      <minValue>1</minValue>
+      <maxValue>1000</maxValue>
+      <stepFunction>1</stepFunction>
+      <defaultValue>250</defaultValue>
+    </configurationOption>
+    <configurationOption>
+      <name>crfRatio</name>
+      <outputString>--crf $n</outputString>
+      <prefix></prefix>
+      <postfix>
+      </postfix>
+      <parent>root</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions />
+      <minValue>10</minValue>
+      <maxValue>50</maxValue>
+      <stepFunction>0.1</stepFunction>
+      <defaultValue>23</defaultValue>
+    </configurationOption>
+    <configurationOption>
+      <name>Threads</name>
+      <outputString>--threads $n</outputString>
+      <prefix></prefix>
+      <postfix>
+      </postfix>
+      <parent>root</parent>
+      <children />
+      <impliedOptions />
+      <excludedOptions />
+      <minValue>0</minValue>
+      <maxValue>128</maxValue>
+      <stepFunction>1</stepFunction>
+      <defaultValue>4</defaultValue>
+    </configurationOption>
+  </numericOptions>
+</vm>
